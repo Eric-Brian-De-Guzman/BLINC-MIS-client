@@ -14,7 +14,7 @@ import AttendanceTime from "@/components/User/DashboardPage/AttendanceTime.vue";
     <div class="lg:col-span-1 md:col-span-1">
       <AttendanceTime />
     </div>
-    <div class="row-span-2 lg:col-span-1 md:col-span-1">
+    <div class="row-span-2 bg-white rounded-lg p-1 lg:col-span-1 md:col-span-1">
       <DashboardCalendar />
     </div>
   

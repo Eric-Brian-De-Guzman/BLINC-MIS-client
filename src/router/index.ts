@@ -117,7 +117,7 @@ const router = createRouter({
           component: () => import("../components/User/DashboardPage.vue")
         },
         {
-          path: "attendance",
+          path: "attendances",
           component: () => import("../components/User/AttendancesPage.vue")
         },
         {

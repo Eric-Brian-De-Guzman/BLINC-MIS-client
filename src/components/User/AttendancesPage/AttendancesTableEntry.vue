@@ -20,6 +20,12 @@ const late = ref(false);
       {{ moment(props.attendance.timeOut).format("hh:mm A") }}
     </td>
     <td class="px-6 py-4">
+      {{ moment(props.attendance.timeIn).format("hh:mm A") }}
+    </td>
+    <td class="px-6 py-4">
+      {{ moment(props.attendance.timeOut).format("hh:mm A") }}
+    </td>
+    <td class="px-6 py-4">
       <p
         v-if="false"
         class="mx-0.5 inline bg-emerald-600 w-10 text-white p-1.5 rounded-lg text-center"

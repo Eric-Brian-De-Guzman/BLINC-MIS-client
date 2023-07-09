@@ -16,7 +16,7 @@ axios.get(`/time/${user.id}`).then((res) => {
 <template>
   <p class="text-gray-700 text-3xl text-center my-5 font-extrabold">Attendances</p>
   <div class="grid grid-cols-6 w-full gap-4">
-    <div class="col-span-4">
+    <div class="col-span-6">
       <div class="flex">
         <div>
           <button
@@ -42,7 +42,7 @@ axios.get(`/time/${user.id}`).then((res) => {
         </div>
       </div>
 
-      <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+      <div class="cols-6 relative overflow-x-auto shadow-md sm:rounded-lg">
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
           <AttendancesTableHead />
           <tbody>
@@ -54,9 +54,6 @@ axios.get(`/time/${user.id}`).then((res) => {
           </tbody>
         </table>
       </div>
-    </div>
-    <div class="col-span-2">
-      <UserCalendar />
     </div>
   </div>
 </template>

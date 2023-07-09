@@ -38,10 +38,14 @@ function logOut() {
     class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full border-gray-200 bg-violet sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
     aria-label="Sidebar">
     <img src="/blinc-logo.png" alt="logo" class="w-40 pt-8 pb-16 mx-auto h-15" :draggable="false"/>
-    <div class="block w-5/6 mx-auto bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-    <p class="text-xl text-center text-black dark:text-white" role="none">{{ name }}</p>
+    <div class="block w-2/3 mx-auto border border-gray-200 rounded-lg shadow bg-csv dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <p class="text-sm text-center text-white dark:text-white" role="none">
+      {{ name }}
+    </p>
     <hr class="w-2/3 mx-auto bg-gray-700 border-[1.5] dark:bg-gray-700" />
-    <p class="pb-2 text-xl font-medium text-center text-black truncate dark:text-gray-300" role="none">{{ role }}</p>
+    <p class="pb-2 text-sm font-medium text-center text-white truncate dark:text-gray-300" role="none">
+      {{ role }}
+    </p>
   </div>
   
     <div class="h-full px-3 py-4 overflow-y-auto bg-violet dark:bg-gray-800">

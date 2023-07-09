@@ -14,6 +14,9 @@ const props = defineProps(["transaction"]);
     <td class="px-6 py-4 overflow-auto">
       {{ props.transaction.description }}
     </td>
+    <td class="px-6 py-4 overflow-auto">
+      {{ props.transaction.transactionType }}
+    </td>
     <td class="px-6 py-4">
       {{ moment(props.transaction.startDate).format("LLL") }}
     </td>

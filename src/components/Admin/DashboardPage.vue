@@ -14,7 +14,7 @@ import AdminHeader from "./DashboardPage/AdminHeader.vue";
     <div class="row-span-2 lg:col-span-1 md:col-span-1">
       <AttendanceTime />
       <br />
-      <div class="bg-white rounded-lg ">
+      <div class="p-1 bg-white rounded-lg ">
       <DashboardCalendar />
     </div>
     </div>

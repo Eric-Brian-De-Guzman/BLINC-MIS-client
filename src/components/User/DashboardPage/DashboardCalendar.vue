@@ -14,7 +14,7 @@ export default {
       calendarOptions: {
         plugins: [dayGridPlugin, interactionPlugin, listPlugin],
         showNonCurrentDates: false,
-        height: 500,
+        height: 650,
         width: "100%",
         initialView: "dayGridMonth",
         moreLinkClick: "popover",
@@ -46,22 +46,39 @@ export default {
 
 };
 </script>
+<style>
 
-<style scoped>
-.fc-toolbar-title{
-  font-weight: 900;
+.fc-day{
+background:#fff;
+color: #374151;
+font-weight: 700;
+}
+.fc-daygrid{
+background:#fff;
+color: #374151;
+font-weight: 500;
+}
+
+.fc-col-header-cell{
+background:#fff;
+color: #374151;
+}
+h2{
+  color: #374151;
+  font-weight: 800;
 }
 
 </style>
 
+
 <template>
   <div>
-    <FullCalendar :options="calendarOptions" />
+    <FullCalendar :options="calendarOptions" class="w-[99%]" />
   </div>
   <div class="w-full my-4">
     <RouterLink
       to="/user/calendar"
-      class="px-4 py-2 text-xs font-bold text-white border-2 border-solid rounded-lg bg-primary hover:bg-gray-900 gitborder-white-500"
+      class="px-4 py-2 text-xs font-bold text-white border-2 border-solid rounded-lg bg-secondary hover:bg-gray-900 gitborder-white-500"
     >
       Open Calendar</RouterLink
     >
